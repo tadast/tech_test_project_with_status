@@ -65,4 +65,11 @@ A: Not for the initial release, but we will definitelly need it soon.
 Note: I'll need to make sure the data model allows loading all kinds of project events in a single query, so that it can be paginated and possibly sorted, so that pagination can be added later without redoing the data model and migrating historic data.
 ```
 
+```
+Q: Will users be able to comment on anything else than Projects?
+A: Maybe, we don't know
+
+Note: Making a comment association polymorpic later is relatively easy, so I won't do that up-front
+```
+
 General note on the approach: work on the minimal release, where confident about future requirements, ensure they can be added without backwards-incompatibilities and there is no need to redo the data models.
