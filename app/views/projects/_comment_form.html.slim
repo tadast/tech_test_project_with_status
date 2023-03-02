@@ -7,7 +7,7 @@
           li = error.full_message
   div
     = form.label :body, "Leave a comment:", style: "display: block"
-    = form.text_area :body, required: :required, class: "w-full"
+    = form.text_area :body, required: :required, class: "w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
 
   .w-full.flex.justify-end.my-2
     = form.submit "Post a comment", class: "bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 border-b-4 border-yellow-700 hover:border-yellow-500 rounded"

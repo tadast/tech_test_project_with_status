@@ -1,10 +1,11 @@
-h1.text-2xl.my-6 Editing project
+.mx-auto.max-w-sm
+  h1.text-2xl.my-6 Editing project
 
-== render "form", project: @project
+  == render "form", project: @project
 
-br
+  br
 
-div
-  => link_to "Show this project", @project, class: "underline"
-  '|
-  =< link_to "Back to projects", projects_path, class: "underline"
+  div
+    => link_to "Show this project", @project, class: "underline"
+    '|
+    =< link_to "Back to projects", projects_path, class: "underline"

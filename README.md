@@ -102,3 +102,4 @@ The task was timeboxed to 3 hours, and the following things did not make the cut
 - [ ] Do not re-render the page when a comment is posted, use turbo
 - [ ] More advanced project status change activity display i.e. with a link to the user account or with an ability to highlight before/after status values visually
 - [ ] turbo + action cable to stream comments/project status changes to all users
+- [ ] introduce ViewComponent, primarilly so that tailwind styles could be reused via components - a lot of copy-pasting now
