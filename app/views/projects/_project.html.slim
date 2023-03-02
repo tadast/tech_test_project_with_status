@@ -5,3 +5,7 @@ div id="#{dom_id project}"
   p
     strong Title:
     =< project.title
+
+  p
+    strong Status:
+    =< project.status.humanize

@@ -10,4 +10,7 @@
     = form.text_area :title, required: :required
 
   div
+    = form.label :status, style: "display: block"
+    = form.select :status, Project.statuses
+  div
     = form.submit

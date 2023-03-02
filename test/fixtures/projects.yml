@@ -3,3 +3,4 @@
 sample:
   user: author
   title: Sample Project
+  status: :draft

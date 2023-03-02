@@ -53,6 +53,6 @@ class ProjectsController < AuthenticatedController
 
     # Only allow a list of trusted parameters through.
     def project_params
-      params.require(:project).permit(:user_id, :title)
+      params.require(:project).permit(:title, :status)
     end
 end
