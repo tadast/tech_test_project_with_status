@@ -11,6 +11,6 @@
 
   div
     = form.label :status, style: "display: block"
-    = form.select :status, Project.statuses
+    = form.select :status, options_for_select(Project.statuses.values.map { |v| [v.humanize, v] })
   div
     = form.submit
