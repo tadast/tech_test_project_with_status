@@ -2,6 +2,8 @@ p style="color: green" = notice
 
 == render @project
 
+= render "projects/comment_form", project: @project, comment: @comment || Comment.new
+
 div
   => link_to "Edit this project", edit_project_path(@project)
   '|

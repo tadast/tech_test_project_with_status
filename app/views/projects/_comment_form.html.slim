@@ -1,0 +1,13 @@
+= form_with(model: comment, url: project_comments_path(project_id: project.id)) do |form|
+  - if comment.errors.any?
+    div style="color: red"
+      h2 = "#{pluralize(comment.errors.count, "error")} prohibited this comment from being posted:"
+      ul
+        - comment.errors.each do |error|
+          li = error.full_message
+  div
+    = form.label :body, "New comment", style: "display: block"
+    = form.text_area :body, required: :required
+
+  div
+    = form.submit "Post a comment"
