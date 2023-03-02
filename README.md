@@ -73,3 +73,13 @@ Note: Making a comment association polymorpic later is relatively easy, so I won
 ```
 
 General note on the approach: work on the minimal release, where confident about future requirements, ensure they can be added without backwards-incompatibilities and there is no need to redo the data models.
+
+## Things that could be done next
+
+The task was timeboxed to 3 hours, and the following things did not make the cut:
+
+- [ ] Log out link (workaround: clear browser cookies)
+- [ ] Project status change inline UI with turbo-driven updates
+- [ ] Do not re-render the page when a comment is posted, use turbo
+- [ ] More advanced project status change activity display i.e. with a link to the user account or with an ability to highlight before/after status values visually
+- [ ] turbo + action cable to stream comments/project status changes to all users
