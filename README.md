@@ -1,5 +1,24 @@
 # This repo is a take-home tech test for a job application
 
+To run locally:
+```
+bundle exec rails db:setup
+foreman start -f Procfile.dev
+```
+visit http://localhost:3000
+
+
+To run tests
+```
+bundle exec rails test
+```
+
+To run system tests
+```
+bundle exec rails test test/system
+```
+
+
 ## Task
 
 Use Ruby on Rails to build a project conversation history. A user should be able to:
