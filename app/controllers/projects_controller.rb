@@ -1,4 +1,4 @@
-class ProjectsController < ApplicationController
+class ProjectsController < AuthenticatedController
   before_action :set_project, only: %i[ show edit update destroy ]
 
   # GET /projects
@@ -21,7 +21,7 @@ class ProjectsController < ApplicationController
 
   # POST /projects
   def create
-    @project = Project.new(project_params)
+    @project = current_user.projects.new(project_params)
 
     if @project.save
       redirect_to @project, notice: "Project was successfully created."

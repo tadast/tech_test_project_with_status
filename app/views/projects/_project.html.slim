@@ -1,7 +1,7 @@
 div id="#{dom_id project}"
   p
-    strong User:
-    =< project.user_id
+    strong Created by:
+    =< project.user.email
   p
     strong Title:
     =< project.title
