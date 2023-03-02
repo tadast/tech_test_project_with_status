@@ -1,24 +1,22 @@
-# README
+# This repo is a take-home tech test for a job application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Task
 
-Things you may want to cover:
+Use Ruby on Rails to build a project conversation history. A user should be able to:
 
-* Ruby version
+- leave a comment
+- change the status of the project
 
-* System dependencies
+The project conversation history should list comments and changes in status.
 
-* Configuration
+Please don’t spend any more than 3 hours on this task.
 
-* Database creation
+## Brief
 
-* Database initialization
+Treat this as if this was the only information given to you by a team member, and take the approach you would normally take in order to build the right product for the company.
 
-* How to run the test suite
+To this extent:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Please write down the questions you would have asked your colleagues
+- Include answers that you might expect from them
+- Then build a project conversation based on the answers to the questions you raised.
