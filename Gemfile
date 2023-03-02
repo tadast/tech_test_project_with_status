@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 gem "devise"
 
 gem "slim-rails"
+gem "tailwindcss-rails", "~> 2.0"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -60,6 +61,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "foreman"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"

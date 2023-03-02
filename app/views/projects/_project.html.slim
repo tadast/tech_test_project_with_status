@@ -1,11 +1,11 @@
 div id="#{dom_id project}"
-  p
-    strong Created by:
-    =< project.user.email
-  p
-    strong Title:
-    =< project.title
+  .flex.items-start
+    h3.text-2xl.flex-grow.font-semibold
+      = project.title
+      small.text-sm.font-normal.text-gray-700
+        =< "by #{project.user.email}"
 
-  p
-    strong Status:
-    =< project.status.humanize
+    =< link_to project.status.humanize, edit_project_path(project), class: "py-1 px-2 shadow-md no-underline rounded-full bg-blue-400 text-white font-sans font-semibold text-sm border-blue btn-primary"
+
+  .my-2 title="#{project.updated_at.to_fs(:human)}"
+    = "Last activity #{distance_of_time_in_words_to_now(project.updated_at)} ago"

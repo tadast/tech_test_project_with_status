@@ -7,10 +7,10 @@
           li = error.full_message
   div
     = form.label :title, style: "display: block"
-    = form.text_area :title, required: :required
+    = form.text_field :title, required: :required
 
   div
     = form.label :status, style: "display: block"
-    = form.select :status, options_for_select(Project.statuses.values.map { |v| [v.humanize, v] })
-  div
-    = form.submit
+    = form.select :status, options_for_select(Project.statuses.values.map { |v| [v.humanize, v] }, selected: @project.status)
+  .my-2
+    = form.submit class: "bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 border-b-4 border-yellow-700 hover:border-yellow-500 rounded"

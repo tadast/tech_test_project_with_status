@@ -1,5 +1,5 @@
-div.border.p-4
+.p-4
   - if project_activity.subject
     = render project_activity.subject
   - else
-    = project_activity.display_text
+    .text-sm= project_activity.display_text

@@ -2,12 +2,16 @@ p style="color: green" = notice
 
 == render @project
 
+.border.border-b-orange-500.border-dashed.my-2
+
 = render "projects/comment_form", project: @project, comment: @comment || Comment.new
 
-= render @project_activities
-div
-  => link_to "Edit this project", edit_project_path(@project)
-  '|
-  =< link_to "Back to projects", projects_path
+- if @project_activities.any?
+  h3.text-2xl.font-semibold Project Activity
+.space-y-2.divide-y-2
+  = render @project_activities
 
-  = button_to "Destroy this project", @project, method: :delete
+div
+  => link_to "Edit this project", edit_project_path(@project), class: "underline"
+  '|
+  =< link_to "Back to projects", projects_path, class: "underline"

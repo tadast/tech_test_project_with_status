@@ -9,5 +9,6 @@ class Comment < ApplicationRecord
 
   def record_project_activity
     project.project_activities.create!(subject: self)
+    project.touch
   end
 end

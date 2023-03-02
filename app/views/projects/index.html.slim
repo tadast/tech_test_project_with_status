@@ -1,11 +1,13 @@
-p style="color: green" = notice
+p.bg-green-600= notice
 
-h1 Projects
+h1.text-4xl.font-semibold.mb-8 Projects
 
-#projects
+.grid.grid-cols-1.gap-4.md:grid-cols-2
   - @projects.each do |project|
-    == render project
-    p
-      = link_to "Show this project", project
+    .border.p-3.rounded-sm.bg-yellow-50.border-yellow-300.flex.flex-col
+      == render project
+      p
+        = link_to "Show this project", project, class: "underline"
 
-= link_to "New project", new_project_path
+.my-6.flex.justify-end
+  = link_to "New project", new_project_path, class: "bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 border-b-4 border-yellow-700 hover:border-yellow-500 rounded"

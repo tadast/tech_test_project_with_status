@@ -13,7 +13,7 @@ class ProjectsTest < ApplicationSystemTestCase
   test "adds and displays a comment on a Project" do
     visit project_url(@project)
 
-    fill_in "New comment", with: "Looks good to me"
+    fill_in "Leave a comment", with: "Looks good to me"
     click_on "Post a comment"
 
     assert_text "Your comment has been posted"
